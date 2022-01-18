@@ -1,50 +1,3 @@
-### React Chakra-ui Pagination Demo
-
-- `npm i @ajna/pagination`
-
-- `npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^5`
-
-> testApp.js
-
-
-> index.js
-```js
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { ChakraProvider } from '@chakra-ui/react'
-import './index.css';
-import App from './App';
-
-ReactDOM.render(
-
-  <ChakraProvider>
-      <App />
-  </ChakraProvider>,
-  document.getElementById('root')
-);
-
-```
-
-> App.js
-
-```js
-import TestPage from './testPage'
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <TestPage />
-      </header>
-    </div>
-  );
-}
-export default App;
-```
-
-> testPage.js
-```js
 import React, { ChangeEvent, useEffect, useState } from "react";
 
 import { Grid, Center, Select, Text, Button, Stack } from "@chakra-ui/react";
@@ -234,9 +187,12 @@ const TestPage = () => {
         ))}
       </Grid>
     </Stack>
+
+
+
+
     </div>
   )
 };
 
 export default TestPage;
-```
